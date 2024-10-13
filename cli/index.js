@@ -144,10 +144,10 @@ const getVideo = async (url, watermark) => {
     });
     const body = await request.text();
     // Check for rate limit
-    if (body.includes("ratelimit triggered")) {
-        console.error("Error: Rate limit triggered. Please try again later.");
-        return null; // or handle this error as needed
-    }
+    // if (body.includes("ratelimit triggered")) {
+    //     console.error("Error: Rate limit triggered. Please try again later.");
+    //     return null; // or handle this error as needed
+    // }
 
     let res;
     try {
